@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prestige Apparel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">
+      <div class="logo">PA</div>
+      <div>
+        <h1>Prestige Apparel</h1>
+        <p>Men's Formal • Casual • Old‑Money</p>
+      </div>
+    </div>
+    <header>
+      <div class="top-nav">
+        <input type="text" placeholder="Search styles..." class="search-box">
+        <button id="wishlist-btn" class="nav-btn">Wishlist (<span id="wishlist-count">0</span>)</button>
+        <button id="cart-btn" class="nav-btn">Cart (<span id="cart-count">0</span>)</button>
+        <button class="nav-btn" ><a href="Signin.html"><font color = "black">Sign In</font></a> </button>
+      </div>
+    </header>
+  </nav>
+  <!-- Wishlist Section -->
+ <section id="wishlist-section" class="hidden">
+  <h2 class="section-title">Your Wishlist</h2>
+  <div id="wishlist-items" class="item-list"></div>
+ </section>
+ <!-- Cart Section -->
+ <section id="cart-section" class="hidden">
+  <h2 class="section-title">Your Cart</h2>
+  <div id="cart-items" class="item-list"></div>
+  <div class="cart-total">
+    <h3>Total: R<span id="cart-total">0</span></h3>
+  </div>
+ </section>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <h2>Prestige Apparel — Refined menswear for the discerning man</h2>
+      <p>Curated collections of tailored formalwear, relaxed casual essentials and classic old‑money pieces — crafted to make a statement without shouting.</p>
+    </div>
+  </header>
+
+  <nav>
+    <button onclick="filterBy('All')">All</button>
+    <button onclick="filterBy('Formal')">Formal</button>
+    <button onclick="filterBy('Casual')">Casual</button>
+    <button onclick="filterBy('Old Money')">Old Money</button>
+  </nav>
+
+  <section id="productsGrid" class="grid"></section>
+
+  <footer>
+    <p>&copy; 2025 Prestigue Wear. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

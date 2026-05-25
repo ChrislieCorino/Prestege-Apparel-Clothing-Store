@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="brand">
+            <div class="logo">PA</div>
+            <div>
+                <h1>Prestige Apparel</h1>
+                <p>Men's Formal • Casual • Old‑Money</p>
+            </div>
+        </div>
+        <div class="nav-actions">
+            <button class="btn primary" id="signinBtn"><a href="index.html"><font color = "white">BACK</font></a></button>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="deco">
+            <section class = "wrapper">
+        <div class = "form login">
+        <header>Login</header>
+        <br>
+        <form action = "#">
+            <label><font color="black">Email Address: </font></label>
+            <input type = "text" placeholder = "Email Address" required/>
+            <br><br>
+            <label><font color="black">Password: </font></label>
+            <input type = "password" placeholder = "Password" required/>
+            <br><br>
+            <a href = "#">Forgot Password</a>
+            <br>
+            <button onclick="log()"><font color="black">SUBMIT</font></button>
+        </form>
+        </div>
+        <div class = "signup">
+            <p><font color = "black">Don't have an acount with us? Signup for one:</font></p>
+        </div>
+
+        <section class = "wrapper">
+            <div class = "Form Signup">
+            <header>Signup</header>
+            <br>
+            <form action = "#">
+                <label><font color="black">Full Name: </font></label>
+                <input type = "text" placeholder="Full name" required/>
+                <br><br>
+                <label><font color="black">Email Address: </font></label>
+                <input type = "text" placeholder="Email address" required/>
+                <br><br>
+                <label><font color="black">Password: </font></label>
+                <input type = "password" placeholder="Password" required/>
+                <br>
+                <div class = "checkbox">
+                    <br>
+                    <div class = "check">
+                    <input type = "checkbox" id = "signupCheck"/>
+                    <label for = "signupCheck">
+                        <font color = "black">I accept all terms & conditions</font>
+                    </label>
+                    </div>
+                    <br>
+                    <div class = "radio">
+                        <font color = "black">
+                            <input type = "radio" name = "Gender">Male
+                            <input type = "radio">Female
+                        </font>
+                        <br>
+                        <button onclick="sign()"><font color="black">SIGN UP</font></button>
+                    </div>
+            </form>
+            </div>
+            <br><br>
+        </section>
+        </div>
+
+        <br><br><br>
+        <footer>
+            <div class="footer-text">© 2025 Prestige Apparel</div>
+        </footer>
+</body>
+</html>
